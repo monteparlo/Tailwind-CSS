@@ -172,8 +172,8 @@ function applyStyle(styleNumber) {
                     paragraph.className = ' s3 bg-indigo-600 p-4 m-9 rounded shadow-lg text-[1.2vw] hover:font-bold';
                 });
                 document.querySelector("h1").className = 's3 m-3 text-[6vh] align-center font-bold text-center';
-                document.querySelector("h3").className = 's3  m-3 text-[3vh] align-center font-semibold italic text-center';
-                document.querySelector("nav").className = 's3 m-3 text-[6vh] align-center text-center';
+                document.querySelector("h3").className = 's3 m-3 text-[3vh] align-center font-semibold italic text-center';
+                document.querySelector("nav").className = 's3 m-3 bg-indigo-600 text-[6vh] align-center text-center';
                 document.querySelectorAll("nav button").forEach(button => {
                     button.className = 's3 text-nowrap hover:font-bold';
                 });
@@ -186,6 +186,9 @@ function applyStyle(styleNumber) {
             });
             document.querySelector("h1").className = 's4 m-3 text-[6vh] align-center font-bold text-center';
             document.querySelector("nav").className = 's4 m-3 text-[6vh] align-center text-center';
+            document.querySelectorAll("nav button").forEach(button => {
+                button.className = 's4 text-nowrap hover:font-bold p-5';
+            });
             document.querySelector("h3").className = 's4 m-3 text-[3vh] align-center font-semibold italic text-center';
             break;
 
