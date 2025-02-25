@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monica's Tailwind CSS Example</title>
+    <script src="dist/output.css" rel="stylesheetnep"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link id="theme-style" rel="stylesheet" href="dist/style.css">
+    <script src="script.js" defer></script>
+</head>
+<body id="s">
+    <nav>
+        <button id="s0" onclick="s0()">Style 0</button>
+        <button id="s1" onclick="s1()">Style 1</button>
+        <button id="s2" onclick="s2()">Style 2</button>
+        <button id="s3" onclick="s3()">Style 3</button>
+        <button id="s4" onclick="s4()">Style 4</button>
+        <button id="s5" onclick="s5()">Style 5</button>
+    </nav>
+
+    <div id="content">
+
+            <h1>Monica's Tailwind CSS Example</h1>
+            <h3>✨This is what happens when you master utilizing Tailwind CSS!✨</h3>
+
+            <div class="p-4">
+                <label for="color-picker" class="block mb-2 font-semibold">Pick a color:</label>
+                <select id="color-picker" class="p-2 rounded border">
+                  <option value="white" selected>🎨</option>
+                  <option value="pink">Pink</option>
+                  <option value="amber">Amber</option>
+                  <option value="purple">Purple</option>
+                  <option value="blue">Blue</option>
+                  <option value="cyan">Cyan</option>
+                </select>
+              </div>
+            
+            <div class="flex flex-col items-center space-y-4">
+
+                <p>Hover over me!</p>
+
+                <div class="peer/name group/other-name grid place-items-center m-3 h-20 w-20 shadow-black bg-blue-400 hover:bg-purple-400 transition-colors duration-200 ease-in-out delay-200">
+                    <div class="h-5 w-5 bg-black group-hover/other-name:bg-red-600 transition-colors duration-200 ease-in-out delay-200"></div>
+                    <div class="h-5 w-5 bg-black group-hover/other-name:bg-blue-600 transition-colors duration-200 ease-in-out delay-200"></div>
+                </div>
+
+                <div class="h-20 w-20 shadow-amber-500 bg-green-400 peer-hover/name:bg-orange-500  transition-colors duration-200 ease-in-out delay-200"></div>
+
+                        <p>Animation:</p>
+                        <div class="inline-flex">
+                            <div class="text-4xl px-2 hover:animate-spin">😵‍💫</div> 
+                            <div class="text-4xl px-2 hover:animate-ping">👻</div> 
+                            <div class="text-4xl px-2 hover:animate-pulse">💗</div> 
+                            <div class="text-4xl px-2 hover:animate-bounce">🏀</div> 
+                        </div>
+
+            </div>
+
+            <h1 class="align-middle text-center p-4 text-3xl font-bold text-blue-500 hover:hue-rotate-180">Hello Tailwind CSS!</h1>
+             
+             
+                <div id="txt">
+                    <p class="m-6 p-6 rounded-lg shadow-[0_0_10px_theme('colors.red.700')] hover:hue-rotate-180">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas non molestie quam. Aliquam tristique efficitur consectetur. Cras ultrices malesuada orci, et finibus diam vestibulum in. Donec sit amet lectus pharetra, condimentum neque non, consectetur augue. Suspendisse semper, leo vel convallis mollis, sem sem porta quam, vitae tristique enim felis a leo. Integer eget orci felis. Pellentesque a diam quis erat vestibulum sollicitudin nec eu ex. Sed et commodo tortor, et elementum enim. Pellentesque efficitur quis mauris at aliquam.
+                    </p>
+                    <p class="m-6 p-6 shadow-[0_0_10px_theme('colors.purple.700')] rounded-lg hover:hue-rotate-180">
+                        Cras ac augue eget eros fringilla auctor porttitor in nisl. Mauris eget orci ut turpis iaculis interdum. Praesent vitae cursus nisl, mollis volutpat justo. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam laoreet tincidunt leo, in maximus justo tincidunt non. Aliquam congue hendrerit erat, ut vulputate enim sagittis at. Fusce at porttitor quam. Sed sodales et quam non ornare. Donec faucibus commodo congue. Donec maximus elementum diam in consequat. Pellentesque id efficitur enim, nec euismod augue. Praesent sed nunc lobortis, placerat dui et, luctus neque. Integer molestie eu risus id dictum. Ut vitae enim ac ex ullamcorper semper.
+                    </p>
+                    <p class="m-6 p-6 shadow-[0_0_10px_theme('colors.green.700')] rounded-lg hover:hue-rotate-180">
+                        Suspendisse iaculis diam et nunc tristique cursus. In luctus porttitor arcu, vitae tincidunt lacus hendrerit iaculis. Nunc sollicitudin rhoncus odio id porttitor. Vestibulum ac purus bibendum, aliquet augue vitae, scelerisque enim. Integer dapibus quis ipsum quis convallis. Vivamus ornare mattis nisl, at molestie orci aliquam quis. Fusce eleifend vehicula dui, non ultrices ante condimentum fringilla. Vivamus sapien ex, lacinia sed sem gravida, aliquet luctus eros. Donec eleifend neque vel augue tempus imperdiet.
+                    </p>
+                    <p class="m-6 p-6 shadow-[0_0_10px_theme('colors.pink.700')] rounded-lg hover:hue-rotate-180">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas non molestie quam. Aliquam tristique efficitur consectetur. Cras ultrices malesuada orci, et finibus diam vestibulum in. Donec sit amet lectus pharetra, condimentum neque non, consectetur augue. Suspendisse semper, leo vel convallis mollis, sem sem porta quam, vitae tristique enim felis a leo. Integer eget orci felis. Pellentesque a diam quis erat vestibulum sollicitudin nec eu ex. Sed et commodo tortor, et elementum enim. Pellentesque efficitur quis mauris at aliquam.
+                    </p>
+                    <p class="m-6 p-6 rounded-lg shadow-[0_0_10px_theme('colors.cyan.700')] hover:hue-rotate-180">
+                        Cras ac augue eget eros fringilla auctor porttitor in nisl. Mauris eget orci ut turpis iaculis interdum. Praesent vitae cursus nisl, mollis volutpat justo. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam laoreet tincidunt leo, in maximus justo tincidunt non. Aliquam congue hendrerit erat, ut vulputate enim sagittis at. Fusce at porttitor quam. Sed sodales et quam non ornare. Donec faucibus commodo congue. Donec maximus elementum diam in consequat. Pellentesque id efficitur enim, nec euismod augue. Praesent sed nunc lobortis, placerat dui et, luctus neque. Integer molestie eu risus id dictum. Ut vitae enim ac ex ullamcorper semper.
+                    </p>
+
+                    <p class="m-6 p-6 rounded-lg shadow-[0_0_10px_theme('colors.amber.700')] hover:hue-rotate-180">
+                        Suspendisse iaculis diam et nunc tristique cursus. In luctus porttitor arcu, vitae tincidunt lacus hendrerit iaculis. Nunc sollicitudin rhoncus odio id porttitor. Vestibulum ac purus bibendum, aliquet augue vitae, scelerisque enim. Integer dapibus quis ipsum quis convallis. Vivamus ornare mattis nisl, at molestie orci aliquam quis. Fusce eleifend vehicula dui, non ultrices ante condimentum fringilla. Vivamus sapien ex, lacinia sed sem gravida, aliquet luctus eros. Donec eleifend neque vel augue tempus imperdiet.
+                    </p>
+                </div>
+
+    </div>
+    
+</body>
+</html>
