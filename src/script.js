@@ -182,7 +182,7 @@ function applyStyle(styleNumber) {
         case 4: //pink bg
             content.className = 's4 w-full p-11 bg-[rgb(255,207,225)] text-[rgb(48,0,0)] text-[45px] box-border font-impact text-right';
             document.querySelectorAll("p").forEach(paragraph => {
-                paragraph.className = 's4 p-4 rounded shadow-lg text-[1.2vw] bg-purple-300 hover:font-bold';
+            paragraph.className = 's4 p-4 rounded shadow-lg text-[1.2vw] bg-purple-300 hover:font-bold';
             });
             document.querySelector("h1").className = 's4 m-3 text-[6vh] align-center font-bold text-center';
             document.querySelector("nav").className = 's4 m-3 text-[6vh] align-center text-center';
@@ -190,7 +190,7 @@ function applyStyle(styleNumber) {
             break;
 
         case 5: //gradient purple
-            content.className = 's5 bg-black w-fit p-6 text-white text-2xl font-sans text-left grid grid-cols-[1fr_auto] gap-5 bg-gradient-to-bl from-[rgb(42,0,33)] via-[rgb(55,0,22)] via-[rgb(47,0,67)] to-[rgb(17,0,84)]';
+           content.className = 's5 bg-black w-fit p-6 text-white text-2xl font-sans text-left grid grid-cols-[1fr_auto] gap-5 bg-gradient-to-bl from-[rgb(42,0,33)] via-[rgb(55,0,22)] via-[rgb(47,0,67)] to-[rgb(17,0,84)]';
             document.querySelectorAll("p").forEach(paragraph => {
                 paragraph.className = ' s5 bg-purple-800 p-4 m-5 rounded shadow-lg text-[1.2vw] hover:bg-pink-900';
             });
