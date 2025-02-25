@@ -3,10 +3,10 @@ function applyStyle(styleNumber) {
     content.className = ''; 
     document.querySelectorAll('style[data-dynamic]').forEach(el => el.remove());
     document.querySelectorAll("body").className = '';
-    document.querySelectorAll("nav").className = '';
+    document.querySelector("nav").className = '';
     document.querySelectorAll("nav button").forEach(button => button.className = '');
-    document.querySelectorAll("h1").className = '';
-    document.querySelectorAll("h3").className = '';
+    document.querySelector("h1").className = '';
+    document.querySelector("h3").className = '';
     document.querySelectorAll("div").className = '';
     document.querySelectorAll("p").forEach(paragraph => paragraph.className = '');
     document.getElementById("txt").className = ""; 
