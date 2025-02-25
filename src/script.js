@@ -169,7 +169,7 @@ function applyStyle(styleNumber) {
             case 3: //black bg
                 content.className = 's3 bg-[rgb(11,18,18)] w-full p-9 text-white text-[35px] box-border font-serif text-center';
                 document.querySelectorAll("p").forEach(paragraph => {
-                    paragraph.className = ' s3 p-4 rounded shadow-lg text-[1.2vw] hover:font-bold';
+                    paragraph.className = ' s3 bg-indigo-600 p-4 m-9 rounded shadow-lg text-[1.2vw] hover:font-bold';
                 });
                 document.querySelector("h1").className = 's3 m-3 text-[6vh] align-center font-bold text-center';
                 document.querySelector("h3").className = 's3  m-3 text-[3vh] align-center font-semibold italic text-center';
@@ -182,7 +182,7 @@ function applyStyle(styleNumber) {
         case 4: //pink bg
             content.className = 's4 w-full p-11 bg-[rgb(255,207,225)] text-[rgb(48,0,0)] text-[45px] box-border font-impact text-right';
             document.querySelectorAll("p").forEach(paragraph => {
-            paragraph.className = 's4 p-4 rounded shadow-lg text-[1.2vw] bg-purple-300 hover:font-bold';
+            paragraph.className = 's4 p-4 rounded shadow-lg text-[1.2vw] hover:font-bold';
             });
             document.querySelector("h1").className = 's4 m-3 text-[6vh] align-center font-bold text-center';
             document.querySelector("nav").className = 's4 m-3 text-[6vh] align-center text-center';
@@ -191,6 +191,12 @@ function applyStyle(styleNumber) {
 
         case 5: //gradient purple
            content.className = 's5 bg-black w-fit p-6 text-white text-2xl font-sans text-left grid grid-cols-[1fr_auto] gap-5 bg-gradient-to-bl from-[rgb(42,0,33)] via-[rgb(55,0,22)] via-[rgb(47,0,67)] to-[rgb(17,0,84)]';
+           document.querySelector("h1").className = 's5 m-5 p-6 text-[7vh] align-right font-semibold text-center';
+           document.querySelector("h3").className = 's5 m-5 p-6 text-[4vh] align-center font-thin text-center';
+           document.querySelector("nav").className = 's5 m-3 text-[3vh] text-center';
+           document.querySelectorAll("nav button").forEach(button => {
+            button.className = 's5 text-nowrap hover:font-bold p-5';
+        });
             document.querySelectorAll("p").forEach(paragraph => {
                 paragraph.className = ' s5 bg-purple-800 p-4 m-5 rounded shadow-lg text-[1.2vw] hover:bg-pink-900';
             });
